@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina em construção</title>
+
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+        
+      #app {
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 2em;
+        font-family: 'Roboto Condensed', sans-serif;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        height: 80vh;
+        position: relative;
+        padding-top: 50px;
+      }
+
+      #redes {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        padding-left: 0px;
+
+      }
+
+      body {
+        background-color: #a9a9a9;
+      }
+      img{
+        animation: float 3s ease-in-out infinite;
+        height: 30px;
+        padding: 0px 10px 0px 0px;
+    }
+
+      @keyframes float{
+        0%{
+            transform: translateY(0);
+        }
+
+        50%{
+            transform: translateY(-15px);
+        }
+
+        100%{
+            transform: translateY(0);
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+    <div>
+      <div id="app"></div>
+        <div id="redes">
+          <a href="https://www.instagram.com/oieanderson" target="_blank">
+          <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="imagem-do-instagram"class="instagram">
+          </a>
+
+          <a href="https://www.github.com/oieanderson" target="_blank">
+          <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="githubimage">
+          </a>
+
+          <a href="https://www.linkedin.com/in/oieanderson/" target="_blank">
+          <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"alt="LinkedIn">
+          </a>
+        </div>
+    </div>
+    </main>
+  </body>
+
+  <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+  <script>
+    var app = document.getElementById("app");
+
+    var typewriter = new Typewriter(app, {
+      loop: true,
+    });
+
+    typewriter
+      .typeString(" PÁGINA EM DESENVOLVIMENTO")
+      .pauseFor(600)
+      .start();
+  </script>
+</html>
